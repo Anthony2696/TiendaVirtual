@@ -12,17 +12,116 @@
 </head>
 <body>
 <div class="p-3 mb-2 bg-primary text-white">
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal"><span style="color:#09F">CHINESSES BUY</span></h5>
-  <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2 text-dark" href="#">Sobre Nosotros</a>
-    <a class="p-2 text-dark" href="#">Contactanos</a>
-    <a class="p-2 text-dark" href="#">Soporte</a>
-    <a class="p-2 text-dark" href="#">Menu</a>
-  </nav>
-  <a class="btn btn-outline-primary" href="#">Registrese</a>
-  <a class="btn btn-outline-primary" href="#">Ingrese</a>
-</div>
+
+
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+	
+	<div>
+	<a href="#">
+		<img src="https://graffica.info/wp-content/uploads/2016/05/dolar2.jpg" width="40" height="40" class="d-inline-block">
+	</a>
+	
+	<a class="navbar-brand text-primary" href="#">BUY CHINES@T</a>
+  </div>
+
+  <div>
+
+  <div class="btn-group">
+  <a class="btn btn-primary dropdown dropdown-toggle "href="#" id="enter" data-toggle="dropdown" aria-haspopup="true"
+  aria-expanded="false">Ingresar</a>
+
+  <div class="dropdown-menu bg-primary" aria-labelledby="enter">
+  	<form class="dropdown-item bg-light">
+ 			  <div class="bg-light dropdown-item form-group row text-dark" >
+    <label for="inputEmail3" class=" col-sm-2 col-form-label">Correo Electronico</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="bg-light dropdown-item form-group row dropdown-item">
+    <label for="inputPassword3" class="col-sm-2 col-form-label ">Contraseña</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control " id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="bg-light dropdown-item row">
+      <legend class="col-form-label col-sm-2 pt-0">Usuario</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Gratis
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Empresarial
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+          <label class="form-check-label" for="gridRadios3">
+            Premium(Proximamente)
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row dropdown-item">
+    <div class="col-sm-2">¿Olvido Su Contraseña?</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Recuperar Contraseña
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row dropdown-item">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Continuar</button>
+    </div>
+  </div>
+  	</form>
+  </div>
+	</div>
+  <a class="btn btn-outline-primary "href="#">Registrarse</a>
+ 
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+	</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-primary" href="#">Sobre Nosotros <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="#">Contactanos</a>
+      </li>
+      <li class="nav-item dropdown dropright btn-group">
+        <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-info" href="#">Compra Articulos</a>
+          <a class="dropdown-item text-info" href="#">Vende Articulos</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-info" href="#">Mostrar mas...</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Obten Tu Nube (proximamente)</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">PRECIOS</h1>
@@ -61,7 +160,7 @@
           <li><span class="text-secondary"></span>te ofrecemos 50GB de almacenamiento</li>
           <li><span class="text-secondary">Descuentos para pequeñas uy grandes empresas</span></li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Contactanos</button>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Contactanos</button>
       </div>
     </div>
   </div>
