@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!- BootStrap Requiere META Sencible ->
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!- uso de Bootstrap CDN BOOTSTRAP ->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Registro</title>
+</head>
+<body>
+<div class="p-3 mb-2 bg-dark text-white">
+<div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h2>REGISTRESE</h2>
+    <p class="lead">En BUY Chines@T, Te ofrecemos nuestro Plan Empresarial donde contaras con 500GB en la nube, podras montar tu 
+    propia tienda virtual y MUCHO MAS por tan solo 29$.</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Your cart</span>
+        <span class="badge badge-secondary badge-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Product name</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Second product</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Third item</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">Promo code</h6>
+            <small>EXAMPLECODE</small>
+          </div>
+          <span class="text-success">-$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong>$20</strong>
+        </li>
+      </ul>
+
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Promo code">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Redeem</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Ingrese Sus Datos</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Primer Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Primer Nombre Requerido.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Apellido Requirido.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="username">Nombre de Usuario</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="Nombre de Usuario" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Nombre de Usuario Requerido.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Correo Electronico <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="chino@example.com">
+          <div class="invalid-feedback">
+            por favor ingrese una direccion de correo electronico valido.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Direccion</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Calle Principal" required>
+          <div class="invalid-feedback">
+            Por favor ingrese una direccion.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address2">Direccion 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartamento o suit">
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Pais</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">elegir...</option>
+              <option>Venezuela</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor ingrese un pais Valido.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Estado</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">elegir...</option>
+              <option>Merida</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor ingrese un estado valido.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Codigo Postal</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Codigo postal requerido.
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4 bg-primary">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Guardar informacion para su Perfil.</label>
+        </div>
+        <hr class="mb-4 bg-primary">
+
+        <h4 class="mb-3">Pago (No Seleccionar, Si su registro es Gratis)</h4>
+
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" >
+            <label class="custom-control-label" for="credit">Tarjeta de Credito</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" >
+            <label class="custom-control-label" for="debit">Tarjeta de Debito</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" >
+            <label class="custom-control-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Nombre de la tarjeta</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" >
+            <small class="text-muted">Nombre Completo o Tarjeta</small>
+           <!-- <div class="invalid-feedback">
+              Name on card is required
+            </div>
+           --> 
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Numero de tarjeta de Credito</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" >
+            <!--<div class="invalid-feedback">
+              Credit card number is required
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiracion</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" >
+            <!--<div class="invalid-feedback">
+              Expiration date required
+            </div>
+            -->
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" >
+            <!--<div class="invalid-feedback">
+              Security code required
+            </div>
+            -->
+          </div>
+        </div>
+        
+        <div class="custom-checkbox">
+          <div class="col-md-4 mb-3 my-3 mx-2">
+            <input type="checkbox" class="custom-control-input" id="UserFree">
+            <label class="custom-control-label" for="UserFree">Usuario Gratis</label>
+          </div>
+        </div>
+        
+        <hr class="mb-4 bg-primary">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continuar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <img class="mb-2" src="https://graffica.info/wp-content/uploads/2016/05/dolar2.jpg" alt="" width="24" height="24">
+    <p class="mb-1">&copy; 2019 - BUY Chines@T</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacidad</a></li>
+      <li class="list-inline-item"><a href="#">Terminos</a></li>
+      <li class="list-inline-item"><a href="#">soporte</a></li>
+    </ul>
+  </footer>
+</div>
+</div>
+<!- Necesario para BootStrap JQUERY y POPPERS ->
+<script src=          "https://code.jquery.com/jquery-3.3.1.slim.min.js"      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
